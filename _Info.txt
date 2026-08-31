@@ -1,0 +1,7 @@
+VERSION: "1.0.01",
+GAME_VERSION_MAJOR: 71,
+GAME_VERSION_MINOR: 71,
+NAME: "Chichen Race",
+DESC: "Adds the Chichen, a race of ground-dwelling birds.",
+AUTHOR: "WyseHeller",
+INFO: "",

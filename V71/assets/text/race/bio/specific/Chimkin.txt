@@ -1,0 +1,151 @@
+DREAMS: [
+    "Still believes {HE} could learn to fly if {HE} practiced hard enough.",
+    "Has a favorite patch of dirt reserved exclusively for bathing.",
+    "Collects especially shiny pebbles and hides them beneath {HIS} sleeping place.",
+    "Crows at sunrise even when nobody else is awake to hear it.",
+    "Gets nervous whenever {HE} is too far from the rest of the flock.",
+    "Has tried several times to build a nest despite having no practical need for one.",
+    "Insists that {HIS} feathers look better after rolling in fresh mud.",
+    "Dreams of one day seeing the world from above instead of from the ground.",
+    "Frequently challenges {HIS} reflection before realizing it is not another {RACE}.",
+    "Refuses to eat the last piece of fruit in a meal because {HE} considers it bad luck.",
+    "Secretly envies birds that can still fly.",
+    "Likes to perch on the highest object available, even when it is wildly impractical.",
+],
+
+TRAIT: {
+    COMPETENT: [
+        "{HEC} works hard to strengthen the flock and improve {HIS} place within it.",
+        "Does {HIS} best to ensure the flock and its hatchlings remain well-fed and secure.",
+    ],
+
+    LAZY: [
+        "Prefers scratching around the roost to doing any serious work.",
+        "Believes those lower in the pecking order should handle the unpleasant labour.",
+        "{NAME} works only hard enough to keep the flock from pecking at {HIM}.",
+    ],
+
+    CONSERVATIVE: [
+        "Believes every {RACE} has a proper place in the pecking order and should remain there.",
+        "{NAME} distrusts customs that were not practiced by the old flocks.",
+        "Thinks a flock without a strict hierarchy will inevitably tear itself apart.",
+    ],
+
+    TOLERANT: [
+        "Believes even strange-looking {RACES} can have a useful place in the flock.",
+        "{NAME} judges outsiders by whether they help the flock rather than by their feathers.",
+        "Is unusually willing to share the roost with other species.",
+    ],
+
+    CRUEL: [
+        "Frequently pecks at weaker members of the flock simply to remind them of their place.",
+        "{NAME} believes those unable to defend their position deserve to fall in the pecking order.",
+        "Has little patience for weak hatchlings or weaker members of the flock.",
+    ],
+
+    MERCIFUL: [
+        "Believes even the lowest member of the flock deserves protection.",
+        "{NAME} often intervenes when stronger {RACE} bully those beneath them.",
+        "Thinks the purpose of being high in the pecking order is to protect the flock.",
+    ],
+
+    CUNNING: [
+        "Has learned exactly which feathers to ruffle to move higher in the pecking order.",
+        "{NAME} prefers arranging fights between rivals rather than challenging them directly.",
+        "Carefully flatters those above {HIM} while undermining those immediately below.",
+    ],
+
+    MODEST: [
+        "{NAME} rarely crows about {HIS} accomplishments.",
+        "Is content with {HIS} current place in the pecking order.",
+        "Keeps {HIS} feathers tidy but sees little reason to show them off.",
+    ],
+
+    HONEST: [
+        "Believes deceit within the flock weakens everyone.",
+        "{NAME} would rather lose status than gain it through trickery.",
+        "Says what {HE} thinks even when it earns {HIM} a sharp peck.",
+    ],
+
+    PROUD: [
+        "Believes {HIS} comb is among the finest in the entire flock.",
+        "Spends an excessive amount of time preening {HIS} feathers.",
+        "Crows loudly whenever {HE} accomplishes something worth noticing.",
+        "{NAME} is convinced {HE} deserves a much higher place in the pecking order.",
+    ],
+
+    WARRIOR: [
+        "{NAME} eagerly challenges anyone who questions {HIS} place in the pecking order.",
+        "Would rather lose half {HIS} feathers than back down from a fight.",
+        "{HEC} believes strong talons are the surest path to respect within the flock.",
+    ],
+
+    WARRIOR_NOT: [
+        "{NAME} prefers the safety of the flock to proving {HIS} courage alone.",
+        "Has unusually strong self-preservation instincts and avoids challenges whenever possible.",
+        "Believes there is no shame in running if it means keeping all of {HIS} feathers.",
+    ],
+},
+
+HAPPY: [
+    "Is pleased with life in your {RACE_CITY}, but still found a few things worth pecking at:",
+    "Thinks the flock is thriving under your rule and offered these minor suggestions:",
+    "Is content with {HIS} place in the pecking order, but mentioned these improvements:",
+    "Has little to complain about and had to scratch around for these suggestions:",
+    "Believes your {RACE_CITY} is a fine roost, though it could still use the following:",
+],
+
+HAPPY_SOSO: [
+    "Thinks your {RACE_CITY} is an acceptable roost, but sees room for improvement:",
+    "Is mostly content, though a few things continue to ruffle {HIS} feathers:",
+    "Believes the flock is doing well enough, but mentioned these concerns:",
+    "Has no desire to abandon the roost, but would prefer to see the following changed:",
+    "Feels {HIS} place in the pecking order is secure, though life could be better with:",
+],
+
+HAPPY_NO: [
+    "Is thoroughly displeased with your management of the roost and demanded the following:",
+    "Believes the flock is suffering under your rule and angrily mentioned these problems:",
+    "Looks ready to challenge someone higher in the pecking order unless these issues are addressed:",
+    "Has had {HIS} feathers thoroughly ruffled by life in your {RACE_CITY} and complained about:",
+    "Thinks even a half-blind hatchling could manage the roost better and wants the following fixed:",
+],
+NOTHING: [
+    "The flock is content, the roost is secure, and not a feather is out of place.",
+    "Has nothing to complain about. For once, the entire flock seems satisfied.",
+    "Your {RACE_CITY} is such a fine roost that even {NAME} cannot find anything to peck at.",
+    "Believes the pecking order is stable and the flock wants for nothing.",
+    "Everything is in order. The flock is fed, the roost is safe, and complaints are scarce.",
+],
+FUNNY: [
+    "Stop picking your nose while playing. It's not befitting a lord.",
+    "Pull up your pants, please.",
+    "Perhaps Milord could appoint a noble to oversee the royal wardrobe. Fashion is a thing, you know. Respectfully.",
+],
+
+STATS_MORE: {
+    STORED_VEGETABLE: [
+        "The flock needs more vegetables stored away before the next poor harvest.",
+        "A full granary keeps the flock fed when the fields fail us.",
+        "We should store more vegetables. Hungry Chichenu make for an unruly flock.",
+        "The harvest may be plentiful now, but an empty storehouse will not feed us through a famine.",
+        "Milord, a wise flock stores enough vegetables to survive more than one bad season.",
+        "Our stores are too bare. We should fill them while the fields are still generous.",
+        "There are too many beaks in this roost to rely on the next harvest alone.",
+        "A few more piles of vegetables would make the flock much less nervous about winter.",
+    ],
+    STORED_FRUIT: [
+        "The flock needs more fruit stored away before the orchards fail us.",
+        "A well-stocked fruit store keeps the roost cheerful through lean seasons.",
+        "We should gather more fruit while the trees are still heavy with it.",
+        "Milord, empty fruit stores will make for a very unhappy flock come winter.",
+        "The orchards are generous now, but we should save more of their bounty for later.",
+        "There are too many hungry beaks in this {RACE_CITY} to let good fruit go to waste.",
+        "More fruit in storage would give the flock some comfort if the next harvest is poor.",
+        "A wise roost does not eat every berry and apple the moment it is picked.",
+    ],
+},
+
+STATS_LESS: {
+
+},

@@ -1,0 +1,493 @@
+SLEEP_FILE: Blanket,
+SPRITE_EXTRA_FILE: Normal,
+NAMESET_FILE_NOBLE: ChimkinNoble,
+
+WORLD: {
+	TOWN: Normal,
+	TOWN_COLOR: 255_255_255,
+	VILLAGE: Normal,
+	VILLAGE_COLOR: 255_255_255,
+	OVERLAY: Normal,
+	OVERLAY_COLOR: 255_255_255,
+	WALL: Normal,
+	WALL_COLOR: 255_255_255,
+	WALL_VILLAGE: Village,
+	WALL_VILLAGE_COLOR: 255_255_255,
+	TERRAIN: Normal,
+	TERRAIN_COLOR: 140_110_100,
+	FARM: Farm,
+	FARM_COLOR: [
+		194_218_194,
+		180_180_180,
+		210_234_210,
+		202_222_202,
+		184_204_184,
+		196_216_196,
+		190_206_190,
+		202_220_202,
+		194_214_194,
+		192_216_192,
+		220_240_220,
+		194_206_194,
+		192_192_192,
+		196_204_196,
+		222_246_222,
+		208_232_208,
+	],
+},
+
+CROWN: {
+	FILE: CrownChimkin,
+	OFFX: 0,
+	OFFY: 0,
+},
+
+MERC: {
+	FILE: Helm, 
+	OFFX: 0,
+	OFFY: -5,
+},
+
+RAIDER: [
+	{
+		FILE: RaidHat_L,
+		OFFX: 0,
+		OFFY: -4,
+	},
+	{
+		FILE: RaidHat_H,
+		OFFX: 0,
+		OFFY: 1,
+	},
+	{
+		FILE: Helm,
+		OFFX: 0,
+		OFFY: -5,
+	},
+],
+
+COLOR_CLOTHES: [
+	{R: 222, G: 130, B: 111,},
+	{R: 148, G: 85, B: 72,},
+	{R: 10, G: 53, B: 32,},
+	{R: 26, G: 53, B: 87,},
+	{R: 26, G: 53, B: 60,},
+	{R: 26, G: 53, B: 32,},
+	{R: 41, G: 52, B: 87,},
+	{R: 41, G: 52, B: 62,},
+	{R: 41, G: 54, B: 38,},
+],
+COLOR_BLOOD: 123_20_17,
+
+COLORS:
+{
+	FEATHERS:
+	{
+		TURNS_WHITE_WHEN_DEAD: false,
+		VALUES:
+		[
+			{R: 226, G: 80, B: 29,},
+			{R: 156, G: 54, B: 18,},
+			{R: 82, G: 28, B: 8,},
+			{R: 226, G: 143, B: 19,},
+			{R: 156, G: 98, B: 11,},
+			{R: 82, G: 52, B: 7,},
+			{R: 206, G: 194, B: 185,},
+			{R: 123, G: 116, B: 111,},
+			{R: 222, G: 160, B: 114,},
+			{R: 140, G: 101, B: 72,},
+			{R: 222, G: 187, B: 111,},
+			{R: 140, G: 118, B: 70,},
+			{R: 226, G: 218, B: 200,},
+			{R: 152, G: 146, B: 133,},
+			{R: 86, G: 83, B: 77,},
+			{R: 86, G: 77, B: 81,},
+		],
+	},
+	BEAK:
+	{
+		TURNS_WHITE_WHEN_DEAD: true,
+		VALUES:
+		[
+			{R: 230, G: 202, B: 109,},
+			{R: 156, G: 137, B: 74,},
+			{R: 90, G: 79, B: 41,},
+			{R: 86, G: 63, B: 75,},
+		],
+	},
+	COMB:
+	{
+		TURNS_WHITE_WHEN_DEAD: true,
+		VALUES:
+		[
+			{R: 230, G: 105, B: 105,},
+			{R: 169, G: 77, B: 77,},
+			{R: 103, G: 46, B: 46,},
+			{R: 95, G: 73, B: 73,},
+			{R: 160, G: 30, B: 30,},
+			{R: 78, G: 59, B: 32,},
+		],
+	},
+	ARMOR: {
+		PICK_BY_STAT: EQUIP_BATTLE_ARMOUR_PLATE,
+
+		VALUES: [
+			090_090_080,
+			099_099_099,
+			168_168_180,
+			209_159_054,
+		],
+	},
+	ARMOR_LEATHER: {
+		VALUES: [
+			96_071_058,
+			107_079_065,
+			117_086_071,
+			127_095_078,
+		],
+	},
+	ACCESSORIES_I:
+	{
+		VALUES:
+		[
+			{R: 200, G: 75, B: 50,},
+			{R: 200, G: 150, B: 50,},
+			{R: 200, G: 100, B: 75,},
+		],
+	},
+},
+CHILD: {
+
+	INFANT_FILE: Human,
+
+	COLOR_SKIN: FEATHERS,
+	COLOR_LEG: BEAK,
+	
+	SPRITE_FILE: ChildHumanoid,
+	SPRITE_SKELLETON_FILE: Humanoid_small,
+	NAMESET_FILE_FIRST: ChimkinFirst,
+	NAMESET_FILE_SURNAME: ChimkinLast,
+	
+	FACE: [
+		**baby
+		{
+			CONDITIONS: { EQUAL: { TYPE_PARENT: 1, }, },
+			FRAMES: [ Chimkin_Baby: 0, ],
+			OFF_Y: 0,
+			OFF_X: 0,
+			STAINS: true,
+		},
+		{
+			CONDITIONS: { EQUAL: { TYPE_PARENT_SLAVE: 1, }, },
+			FRAMES: [ Chimkin_Baby: 5, ],
+			OFF_Y: 0,
+			OFF_X: 0,
+			STAINS: true,
+		},
+	],
+},
+
+TYPES:
+[
+	
+	** M A L E S
+	
+	{
+		OCCURENCE: 0.3,
+		COLOR_SKIN: FEATHERS,
+		COLOR_LEG: BEAK,
+		
+		SPRITE_FILE: Chimkin,
+		SPRITE_SKELLETON_FILE: Humanoid,
+		NAMESET_FILE_FIRST: ChimkinFirst,
+		NAMESET_FILE_SURNAME: ChimkinLast,
+		PORTRAIT_FILE: Chimkin,
+		
+		ADDONS:
+		[
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 3,
+				COLOR: BEAK,
+			},
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 4,
+				COLOR: COMB,
+			},
+			{
+				BELOW_HEAD: false,
+				SPRITE_FILE: NobilityCloakMedium,
+				ADDON_INDEX: 2,
+				CONDITIONS: { EQUAL: { POPULATION_NOBLES_I: 1, }, },
+			},
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 0,
+				CONDITIONS: { GREATER: { EQUIP_BATTLE_ARMOR_PLATE_I: 0, }, },
+				COLOR: ARMOR,
+			},
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 0,
+				CONDITIONS: { GREATER: { EQUIP_BATTLE_ARMOR_LEATHER_I: 0, }, },
+				COLOR: ARMOR_LEATHER,
+			},
+		],
+		
+		FACE:
+		[
+			**baby
+			{
+				CONDITIONS: { EQUAL: { TYPE_PARENT: 1, }, },
+				FRAMES: [ Chimkin_Baby: 0, ],
+				OFF_Y: -15,
+				OFF_X: 10,
+				STAINS: true,
+			},
+			{
+				CONDITIONS: { EQUAL: { TYPE_PARENT_SLAVE: 1, }, },
+				FRAMES: [ Chimkin_Baby: 5, ],
+				OFF_Y: -15,
+				OFF_X: 10,
+				STAINS: true,
+			},
+			**Body
+			{
+				FRAMES:
+				[
+					Chimkin_Base: 8,
+					Chimkin_Base: 9,
+					Chimkin_Base: 10,
+					Chimkin_Base: 11,
+					Chimkin_Base: 12,
+					Chimkin_Base: 13,
+					Chimkin_Base: 14,
+					Chimkin_Base: 15,
+				],
+				COLOR: FEATHERS,
+				STAINS: true,
+			},
+			{
+				FRAMES:
+				[
+					Chimkin_Base: 0,
+					Chimkin_Base: 1,
+					Chimkin_Base: 2,
+					Chimkin_Base: 3,
+					Chimkin_Base: 4,
+					Chimkin_Base: 5,
+					Chimkin_Base: 6,
+					Chimkin_Base: 7,
+				],
+				COLOR: FEATHERS,
+				STAINS: true,
+			},
+			**Beaks
+			{
+				FRAMES:
+				[
+					Chimkin_Features: 0,
+					Chimkin_Features: 1,
+					Chimkin_Features: 2,
+					Chimkin_Features: 3,
+				],
+				COLOR: BEAK,
+				STAINS: true,
+			},
+			**Combs
+			{
+				FRAMES:
+				[
+					Chimkin_Features: 4,
+					Chimkin_Features: 5,
+					Chimkin_Features: 6,
+					Chimkin_Features: 7,
+					Chimkin_Features: 8,
+					Chimkin_Features: 9,
+					Chimkin_Features: 10,
+					Chimkin_Features: 11,
+				],
+				COLOR: COMB,
+				STAINS: true,
+			},
+			{
+				FRAMES:
+				[
+					Chimkin_Features: 12,
+				],
+				COLOR: COMB,
+				STAINS: true,
+			},
+			** Eyes
+			{
+				CONDITIONS: { EQUAL: { APPEARANCE_DEAD_I: 0, }, },
+				FRAMES:
+				[
+					Chimkin_Eyes: 0,
+					Chimkin_Eyes: 1,
+					Chimkin_Eyes: 2,
+					Chimkin_Eyes: 3,
+					Chimkin_Eyes: 4,
+					Chimkin_Eyes: 5,
+					Chimkin_Eyes: 6,
+					Chimkin_Eyes: 7,
+				],
+				STAINS: false,
+			},
+			** chains
+			{
+				CONDITIONS: { EQUAL: { TYPE_SLAVE: 1, }, },
+				FRAMES: [ SlaveCollar: 5, ],
+				STAINS: false,
+			},
+			** noble
+			{
+				CONDITIONS: { EQUAL: { CLASS_NOBLE: 1, }, },
+				FRAMES: [ Chimkin_Cloak: 0, ],
+				STAINS: false,
+			},
+		],
+	},
+	
+	** F E M A L E S
+	{
+		OCCURENCE: 0.3,
+		COLOR_SKIN: FEATHERS,
+		COLOR_LEG: BEAK,
+		
+		SPRITE_FILE: Chimkin,
+		SPRITE_SKELLETON_FILE: Humanoid,
+		NAMESET_FILE_FIRST: ChimkinFirst,
+		NAMESET_FILE_SURNAME: ChimkinLast,
+		PORTRAIT_FILE: Chimkin,
+		
+		ADDONS:
+		[
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 3,
+				COLOR: BEAK,
+			},
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 4,
+				COLOR: COMB,
+			},
+			{
+				BELOW_HEAD: false,
+				SPRITE_FILE: NobilityCloakMedium,
+				ADDON_INDEX: 2,
+				CONDITIONS: { EQUAL: { POPULATION_NOBLES_I: 1, }, },
+			},
+			{
+				BELOW_HEAD: false,
+				ADDON_INDEX: 0,
+				CONDITIONS: { GREATER: { EQUIP_BATTLE_ARMOR_LEATHER_I: 0, }, },
+				COLOR: ARMOR,
+			},
+		],
+		
+		FACE:
+		[
+			**baby
+			{
+				CONDITIONS: { EQUAL: { TYPE_PARENT: 1, }, },
+				FRAMES: [ Chimkin_Baby: 0, ],
+				OFF_Y: -15,
+				OFF_X: 10,
+				STAINS: true,
+			},
+			{
+				CONDITIONS: { EQUAL: { TYPE_PARENT_SLAVE: 1, }, },
+				FRAMES: [ Chimkin_Baby: 5, ],
+				OFF_Y: -15,
+				OFF_X: 10,
+				STAINS: true,
+			},
+			**Body
+			{
+				FRAMES:
+				[
+					Chimkin_Base: 8,
+					Chimkin_Base: 9,
+					Chimkin_Base: 10,
+					Chimkin_Base: 11,
+					Chimkin_Base: 12,
+					Chimkin_Base: 13,
+					Chimkin_Base: 14,
+					Chimkin_Base: 15,
+				],
+				COLOR: FEATHERS,
+				STAINS: true,
+			},
+			{
+				FRAMES:
+				[
+					Chimkin_Base: 0,
+					Chimkin_Base: 1,
+					Chimkin_Base: 2,
+					Chimkin_Base: 3,
+					Chimkin_Base: 4,
+					Chimkin_Base: 5,
+					Chimkin_Base: 6,
+					Chimkin_Base: 7,
+				],
+				COLOR: FEATHERS,
+				STAINS: true,
+			},
+			**Beaks
+			{
+				FRAMES:
+				[
+					Chimkin_Features: 0,
+					Chimkin_Features: 1,
+					Chimkin_Features: 2,
+					Chimkin_Features: 3,
+				],
+				COLOR: BEAK,
+				STAINS: true,
+			},
+			**Combs
+			{
+				FRAMES:
+				[
+					Chimkin_Features: 4,
+					Chimkin_Features: 5,
+					Chimkin_Features: 6,
+					Chimkin_Features: 7,
+				],
+				COLOR: COMB,
+				STAINS: true,
+			},
+			**Eyes
+			{
+				CONDITIONS: { EQUAL: { APPEARANCE_DEAD_I: 0, }, },
+				FRAMES:
+				[
+					Chimkin_Eyes: 0,
+					Chimkin_Eyes: 1,
+					Chimkin_Eyes: 2,
+					Chimkin_Eyes: 3,
+					Chimkin_Eyes: 4,
+					Chimkin_Eyes: 5,
+					Chimkin_Eyes: 6,
+					Chimkin_Eyes: 7,
+				],
+				STAINS: false,
+			},
+			** chains
+			{
+				CONDITIONS: { EQUAL: { TYPE_SLAVE: 1, }, },
+				FRAMES: [ SlaveCollar: 5, ],
+				STAINS: false,
+			},
+			** noble
+			{
+				CONDITIONS: { EQUAL: { CLASS_NOBLE: 1, }, },
+				FRAMES: [ Chimkin_Cloak: 0, ],
+				STAINS: false,
+			},
+		],
+	},
+]
