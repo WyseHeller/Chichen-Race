@@ -114,7 +114,7 @@ PREFERRED: {
 		DIRT: 1.0,
 		DARK1: 1.0,
 		DARK2: 1.0,
-		NATURE1: 0.8,
+		NATURE1: 0.5,
 		DARK3: 0.5,
 		NATURE2: 0.5,
 	},
