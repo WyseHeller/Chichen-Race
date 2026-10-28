@@ -1,0 +1,37 @@
+INFO: {
+	NAME: "Chichen Brooder",
+	NAMES: "Chichen Brooders",
+	DESC: "Chichen brooders prepare fertile eggs to produce Chichen children. Each child requires 21 days worth of labor.",
+},
+
+BONUS: {
+	NAME: "Chichen breeding",
+	DESC: "Increases the rate at which Chichen are incubated.",
+},
+
+STATS: [
+	{
+		NAME: "Incubation Spot",
+		DESC: "The number of brooding spots that can be raised at once.",
+	},
+	{
+		NAME: "Efficiency",
+		DESC: "Increases the speed of the incubation.",
+	},
+],
+
+ITEMS: [
+	{
+		NAME: "Incubation Spot",
+		DESC: "",
+	},
+	{
+		NAME: "Brooding Nest",
+		DESC: "Increases the efficiency of the incubation.",
+	},
+],
+
+WORK: {
+	TITLE: "Chichen Brooder",
+	VERB: "Incubating eggs",
+},

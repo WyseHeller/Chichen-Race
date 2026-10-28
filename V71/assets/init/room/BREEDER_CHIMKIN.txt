@@ -1,0 +1,112 @@
+ICON: {
+	BG: 32->BG->1,
+	FG: 24->race->Chimkin->0,
+	SHADOW: 2,
+},
+RESOURCES: [EGG,CLAY,WOOD,],
+AREA_COSTS: [0,0,0,],
+FLOOR: DIRT,
+MINI_COLOR: 0_255_255,
+ITEMS: [
+	{
+		COSTS: [2,2,2,],
+		STATS: [1,0,],
+	},
+	{
+		COSTS: [4,4,4,],
+		STATS: [0,3,],
+	},
+],
+WORK: {
+	SHIFT_OFFSET: 0.125,
+	SOUND: work->Temple*,
+	USES_TOOL: false,
+	FULFILLMENT: -1.0,
+},
+INDUSTRY: {
+	IN: {
+		EGG: 2.0,
+	},
+	OUT: {
+		
+	},
+},
+RACE: CHIMKIN,
+INCUBATION_DAYS: 21,
+SPRITES: {
+	1x1_RIM_CORNER: {
+		CIRCULAR: true,
+		SHADOW_LENGTH: 3,
+		ROTATES: true,
+		FRAMES: [
+			WALL: 3,
+		],
+	},
+	1x1_RIM_EDGE: {
+		CIRCULAR: true,
+		SHADOW_LENGTH: 3,
+		ROTATES: true,
+		FRAMES: [
+			WALL: 3,
+		],
+	},
+	1x1_WORM: {
+		CIRCULAR: true,
+		SHADOW_LENGTH: 0,
+		SHADOW_HEIGHT: 0,
+		ROTATES: false,
+		FRAMES: [
+			ORCHARD: 0,
+			ORCHARD: 1,
+			ORCHARD: 2,
+			ORCHARD: 3,
+		],
+	},
+	1x1_RIM_DECOR: {
+		CIRCULAR: true,
+		SHADOW_LENGTH: 2,
+		SHADOW_HEIGHT: 0,
+		ROTATES: true,
+		FRAMES: [
+			NATURE: 1,
+			NATURE: 10,
+			NATURE: 11,
+			NATURE: 12,
+			NATURE: 13,
+		],
+	},
+	1x1_CORNER: {
+		SHADOW_LENGTH: 3,
+		SHADOW_HEIGHT: 0,
+		ROTATES: false,
+		FRAMES: [
+			TABLES: 0,
+		],
+	},
+	1x1_DECOR: {
+		CIRCULAR: true,
+		SHADOW_LENGTH: 2,
+		SHADOW_HEIGHT: 0,
+		ROTATES: false,
+		TINT: true,
+		FRAMES: [
+			NATURE: 1,
+			NATURE: 10,
+			NATURE: 11,
+			NATURE: 12,
+			NATURE: 13,
+		],
+	},
+	2x2_DECOR: {
+		SHADOW_LENGTH: 1,
+		SHADOW_HEIGHT: 0,
+		ROTATES: false,
+		CIRCULAR: true,
+		FRAMES: [
+			CARPETS: 0,
+			CARPETS: 1,
+			CARPETS: 2,
+		],
+	},
+},
+

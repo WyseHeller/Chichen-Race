@@ -165,20 +165,20 @@ CHILD: {
 	
 	SPRITE_FILE: ChildHumanoid,
 	SPRITE_SKELLETON_FILE: Humanoid_small,
-	NAMESET_FILE_FIRST: ChimkinFirst,
-	NAMESET_FILE_SURNAME: ChimkinLast,
+	NAMESET_FILE_FIRST: Chimkin,
+	NAMESET_FILE_SURNAME: Chimkin,
 	
 	FACE: [
 		**baby
 		{
-			CONDITIONS: { EQUAL: { TYPE_PARENT: 1, }, },
+			CONDITIONS: { },
 			FRAMES: [ Chimkin_Baby: 0, ],
 			OFF_Y: 0,
 			OFF_X: 0,
 			STAINS: true,
 		},
 		{
-			CONDITIONS: { EQUAL: { TYPE_PARENT_SLAVE: 1, }, },
+			CONDITIONS: { EQUAL: { TYPE_CHILD_SLAVE: 1, }, },
 			FRAMES: [ Chimkin_Baby: 5, ],
 			OFF_Y: 0,
 			OFF_X: 0,
@@ -199,8 +199,8 @@ TYPES:
 		
 		SPRITE_FILE: Chimkin,
 		SPRITE_SKELLETON_FILE: Humanoid,
-		NAMESET_FILE_FIRST: ChimkinFirst,
-		NAMESET_FILE_SURNAME: ChimkinLast,
+		NAMESET_FILE_FIRST: Chimkin,
+		NAMESET_FILE_SURNAME: Chimkin,
 		PORTRAIT_FILE: Chimkin,
 		
 		ADDONS:
@@ -241,15 +241,15 @@ TYPES:
 			{
 				CONDITIONS: { EQUAL: { TYPE_PARENT: 1, }, },
 				FRAMES: [ Chimkin_Baby: 0, ],
-				OFF_Y: -15,
-				OFF_X: 10,
+				OFF_Y: 2,
+				OFF_X: 12,
 				STAINS: true,
 			},
 			{
 				CONDITIONS: { EQUAL: { TYPE_PARENT_SLAVE: 1, }, },
 				FRAMES: [ Chimkin_Baby: 5, ],
-				OFF_Y: -15,
-				OFF_X: 10,
+				OFF_Y: 2,
+				OFF_X: 12,
 				STAINS: true,
 			},
 			**Body
@@ -358,8 +358,8 @@ TYPES:
 		
 		SPRITE_FILE: Chimkin,
 		SPRITE_SKELLETON_FILE: Humanoid,
-		NAMESET_FILE_FIRST: ChimkinFirst,
-		NAMESET_FILE_SURNAME: ChimkinLast,
+		NAMESET_FILE_FIRST: Chimkin,
+		NAMESET_FILE_SURNAME: Chimkin,
 		PORTRAIT_FILE: Chimkin,
 		
 		ADDONS:
@@ -394,15 +394,15 @@ TYPES:
 			{
 				CONDITIONS: { EQUAL: { TYPE_PARENT: 1, }, },
 				FRAMES: [ Chimkin_Baby: 0, ],
-				OFF_Y: -15,
-				OFF_X: 10,
+				OFF_Y: 2,
+				OFF_X: 12,
 				STAINS: true,
 			},
 			{
 				CONDITIONS: { EQUAL: { TYPE_PARENT_SLAVE: 1, }, },
 				FRAMES: [ Chimkin_Baby: 5, ],
-				OFF_Y: -15,
-				OFF_X: 10,
+				OFF_Y: 2,
+				OFF_X: 12,
 				STAINS: true,
 			},
 			**Body
