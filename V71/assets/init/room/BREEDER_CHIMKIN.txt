@@ -90,10 +90,6 @@ SPRITES: {
 		ROTATES: false,
 		TINT: true,
 		FRAMES: [
-			NATURE: 1,
-			NATURE: 10,
-			NATURE: 11,
-			NATURE: 12,
 			NATURE: 13,
 		],
 	},
@@ -105,7 +101,6 @@ SPRITES: {
 		FRAMES: [
 			CARPETS: 0,
 			CARPETS: 1,
-			CARPETS: 2,
 		],
 	},
 },
