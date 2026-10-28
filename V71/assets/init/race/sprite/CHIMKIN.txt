@@ -50,20 +50,11 @@ MERC: {
 
 RAIDER: [
 	{
-		FILE: RaidHat_L,
-		OFFX: 0,
-		OFFY: -4,
-	},
-	{
 		FILE: RaidHat_H,
 		OFFX: 0,
 		OFFY: 1,
 	},
-	{
-		FILE: Helm,
-		OFFX: 0,
-		OFFY: -5,
-	},
+
 ],
 
 COLOR_CLOTHES: [
